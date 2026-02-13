@@ -1,2 +1,5 @@
-API_KEY = "******"
-RESOURCE_ID = "******" 
+API_KEY = "*****"
+RESOURCE_ID = "*****" 
+PROJECT_ID = "*****"
+DATASET_ID = "aqi"
+TABLE_ID = "aqi_of_india"
