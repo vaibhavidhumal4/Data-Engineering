@@ -13,6 +13,13 @@ import nest_asyncio
 # Setup logging to track the pipeline progress
 logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')
 
+# Function to get IST timestamp
+def get_ist_time():
+    """Returns the current IST time as a naive object for BigQuery display."""
+    ist_tz = pytz.timezone('Asia/Kolkata')
+    # We get the time in IST, then remove the timezone info so BQ treats the 'hours' as literal/wall-clock time.
+    return datetime.now(ist_tz).replace(tzinfo=None)
+
 # Importing creds file again to reload in Google colab
 import importlib
 import creds
