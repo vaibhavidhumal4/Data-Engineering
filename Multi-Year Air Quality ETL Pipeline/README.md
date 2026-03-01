@@ -9,14 +9,14 @@ This project implements an asynchronous ETL pipeline that:
 
 #### Architecture Overview
 
-API (Async Fetch)
-        ↓
-Data Cleaning & Transformation (Pandas)
-        ↓
-Staging Table (BigQuery)
-        ↓
-Incremental Insert into Main Table
-        ↓
+API (Async Fetch)  
+↓  
+Data Cleaning & Transformation (Pandas)  
+↓  
+Staging Table (BigQuery)  
+↓  
+Incremental Insert into Main Table  
+↓  
 Staging Table Cleanup
 
 
